@@ -1,0 +1,154 @@
+/*
+Theme Name: Gymnase de Beaulieu
+Theme URI:
+Description: This new theme for Gymnase de Beaulieu
+Author: A2design
+Author URI:
+Version: 0.0.1
+*/
+/* Default WP */
+
+
+/* fixes for accordion */
+.accordion {
+	margin-bottom: 120px;
+}
+
+.accordion__item:last-child {
+    margin-bottom: 0;
+}
+
+/* menu */
+.header-menu .logged_out .floated-right {
+	display: none;
+}
+
+@media (min-width: 781px) {
+	.header-menu .menu-item.floated-right {
+		float: right;
+		padding-right: 50px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.header-menu .menu-item.floated-right a {
+		max-width: none;
+	}
+}
+
+/* formulaires page */
+.formulaire {
+	background-position: 0 0;
+}
+
+span.wpcf7-not-valid-tip {
+	text-align: right;
+}
+
+@media (min-width: 781px) {
+	span.wpcf7-not-valid-tip {
+		margin: 0 25px 17px 0;
+	}
+}
+
+/* login popup */
+.overlay {
+	display: none;
+	background-color: #202f57;
+	opacity: 0.8;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+}
+
+.login-popup {
+	display: none;
+	position: fixed;
+	z-index: 1000;
+
+	left: calc(50% - 10%);
+    top: calc(50% - 131px);
+}
+
+.login-form {
+	background-color: white;
+	border-top: 1px solid #e5e5e5;
+	padding: 20px;
+
+	min-width: 20%;
+    min-height: 262px;
+}
+
+.login-form .login-form__item {
+	vertical-align: middle;
+	padding: 0 10px;
+	box-sizing: border-box;
+	margin: 0 0 17px 0;
+}
+
+.login-form .login-form__item label {
+	display: inline-block;
+    color: #444444;
+    font-size: 16px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+ .login-form .login-form__item input {
+ 	display: inline-block;
+	background-color: #ececec;
+	color: #444444;
+	font-size: 16px;
+	border: 0;
+	padding: 15px;
+	margin-bottom: 5px;
+	outline-width: 2px;
+	outline-color: #152243;
+ }
+
+ .login-form .forgetmenot {
+ 	text-align: center;
+ }
+
+ .login-form .login-form__btn-wrap {
+ 	margin-top: 15px;
+ 	text-align: center;
+ }
+
+ .login-form .login-form__btn-wrap input {
+ 	cursor: pointer;
+ }
+
+ @media (max-width: 425px) {
+ 	.login-form {
+ 		min-height: 320px;
+ 		min-width: 100%;
+ 	}
+
+ 	.login-popup {
+ 		top: calc(50% - 160px);
+ 		left: 0;
+ 		right: 0;
+ 	}
+
+	.login-form .login-form__item input {
+		width: 100%;
+	}
+}
+
+.alignleft {
+	float: left;
+	margin: 0.5em 1em 0.5em 0;
+}
+.alignright {
+	float: right;
+	margin: 0.5em 0 0.5em 1em;
+}
+.aligncenter {
+	display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
